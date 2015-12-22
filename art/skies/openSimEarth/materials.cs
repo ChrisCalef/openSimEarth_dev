@@ -1,0 +1,18 @@
+//-----------------------------------------------------------------------------
+// Copyright (c) 2016 Chris Calef
+
+singleton CubemapData( OSE_SkyboxCubemap )
+{
+   cubeFace[0] = "./skybox_90";//"./skybox3_270";//RIGHT = EAST
+   cubeFace[1] = "./skybox_270";////"./skybox3_180";//LEFT = WEST
+   cubeFace[2] = "./skybox_00";//"./skybox3_00";//FORWARD = NORTH
+   cubeFace[3] = "./skybox_180";//BACKWARD = SOUTH
+   cubeFace[4] = "./skybox_up";//UP
+   cubeFace[5] = "./skybox_6";//DOWN
+};
+
+singleton Material( OSE_SkyboxMaterial )
+{
+   cubemap = WS_SkyboxCubemap;
+   materialTag0 = "Skies";
+};
