@@ -4,7 +4,7 @@ This is the development repository for the main openSimEarth game directory. The
 
 ## Related repositories
 
-* [openSimEarth branch of Torque 3D](https://github.com/ChrisCalef/Torque3D/tree/openSimEarth)
+* openSimEarth branch of [Torque 3D](https://github.com/ChrisCalef/Torque3D)
 
 
 # License
