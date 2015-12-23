@@ -8,11 +8,11 @@ singleton CubemapData( OSE_SkyboxCubemap )
    cubeFace[2] = "./skybox_00";//"./skybox3_00";//FORWARD = NORTH
    cubeFace[3] = "./skybox_180";//BACKWARD = SOUTH
    cubeFace[4] = "./skybox_up";//UP
-   cubeFace[5] = "./skybox_6";//DOWN
+   cubeFace[5] = "./skybox_down";//DOWN
 };
 
 singleton Material( OSE_SkyboxMaterial )
 {
-   cubemap = WS_SkyboxCubemap;
+   cubemap = OSE_SkyboxCubemap;
    materialTag0 = "Skies";
 };
