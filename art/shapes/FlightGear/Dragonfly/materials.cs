@@ -61,7 +61,7 @@ singleton Material(dragonfly_ac3dmat1_002)
    specularPower[0] = "50";
    doubleSided = "1";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/shapes/fg_convert/Dragonfly/Dragonfly.png";
+   diffuseMap[0] = "art/shapes/FlightGear/Dragonfly/Dragonfly.png";
 };
 
 

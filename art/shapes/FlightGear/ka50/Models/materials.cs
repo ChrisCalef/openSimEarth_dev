@@ -39,7 +39,7 @@ singleton Material(ka50_texture)
    specular[0] = "0.32 0.32 0.32 1";
    specularPower[0] = "50";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/shapes/fg_convert/ka50/Models/texture";
+   diffuseMap[0] = "art/shapes/FlightGear/ka50/Models/texture";
    doubleSided = "1";
    materialTag0 = "Miscellaneous";
 };

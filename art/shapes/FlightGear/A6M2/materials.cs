@@ -70,7 +70,7 @@ singleton Material(A6M2_nospec)
 singleton Material(A6M2_gloss)
 {
    mapTo = "unmapped_mat";
-   diffuseMap[0] = "art/shapes/fg_convert/A6M2/Zero.jpg";
+   diffuseMap[0] = "art/shapes/FlightGear/A6M2/Zero.jpg";
    specular[0] = "0.14 0.14 0.14 1";
    specularPower[0] = "50";
    translucentBlendOp = "None";
@@ -181,7 +181,7 @@ singleton Material(A6M2_Training)
 singleton Material(A6M2_Zero_camo)
 {
    mapTo = "gloss";
-   diffuseMap[0] = "art/shapes/fg_convert/A6M2/Zero camo.png";
+   diffuseMap[0] = "art/shapes/FlightGear/A6M2/Zero camo.png";
    specularPower[0] = "1";
    doubleSided = "1";
    translucentBlendOp = "None";
@@ -191,7 +191,7 @@ singleton Material(A6M2_nospec_000)
 {
    mapTo = "gloss_001";
    diffuseColor[0] = "0.8 0.8 0.8 1";
-   diffuseMap[0] = "art/shapes/fg_convert/A6M2/Zero camo.png";
+   diffuseMap[0] = "art/shapes/FlightGear/A6M2/Zero camo.png";
    translucentBlendOp = "None";
    materialTag0 = "Miscellaneous";
 };
