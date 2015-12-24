@@ -1,5 +1,45 @@
-# openSimEarth
+# openSimEarth Dev User - Game Directory Files
 
+*** WARNING - DO NOT ATTEMPT TO RUN openSimEarth.exe HERE, YOU MUST COPY THESE FILES TO A T3D FULL TEMPLATE PROJECT! ***
+
+This repository is for the use of Torque3D users and developers, who would like to merge openSimEarth into their own projects. 
+
+If you simply want to use openSimEarth, you can download the latest zipped version here: 
+
+  http://openSimEarth.com/downloads/openSimEarth.zip
+
+
+INSTALLATION:
+
+If you have just created a new Torque game project, then you should be able to simply copy all of the files in this repository (minus .git and .gitignore, of course) into your project's game directory.
+
+With an existing Torque project, however, you may have to do a little manual script merging, if you have modified any of the following files:
+
+scripts/main.cs          - start SQL and begin openSimEarth ticking.
+
+scripts/client/
+	default.bind.cs  - a handful of new binds
+	prefs.cs         - block of new prefs needs to be added to your prefs.cs
+	serverConnection.cs  - one line - added gravity argument to physicsInitWorld
+
+scripts/server/
+	BadBehavior/*    - some new behavior trees.
+	game.cs          - physicsInitWorld, and sql.
+	init.cs          - load openSimEarth.cs
+	scriptExec.cs    - load terrainPager.cs and BadBehavior/main.cs
+	weapon.cs        - attach a physics castRay to Ryder & Lurker weapons.
+
+Outside of these files, everything else should be able to drop right into its correct place, assuming you have not modified the basic T3D game directory structure.
+
+The openSimEarth.exe and dll files have been included as a convenience for artists and scripters, but it is expected that many users of this repository will be compiling their own executables, using the openSimEarth Torque3D repository:
+
+   https://github.com/ChrisCalef/Torque3D.git (branch openSimEarth)
+
+
+
+
+
+ 
 This is the development repository for the main openSimEarth game directory. The contents of this repository are meant to be dropped into a T3D game directory.
 
 ## Related repositories

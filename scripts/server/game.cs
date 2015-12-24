@@ -29,8 +29,6 @@ $Game::EndGameScore = 30;
 // Pause while looking over the end game screen (in secs)
 $Game::EndGamePause = 10;
 
-$sqlite = 0;
-
 //-----------------------------------------------------------------------------
 
 function onServerCreated()
@@ -75,8 +73,6 @@ function onServerDestroyed()
 
    physicsDestroyWorld( "server" );
 
-   //stopSQL();//OpenSimEarth //Hm, this gets called too early apparently...?
-   
    // Clean up the GameCore package here as it persists over the
    // life of the server.
    if (isPackage(GameCore))
@@ -105,6 +101,7 @@ function cycleGame()
    // directly from object callbacks.  Object callbacks have to be
    // carefull about invoking server functions that could cause
    // their object to be deleted.
+
    if (!$Game::Cycling)
    {
       $Game::Cycling = true;
@@ -154,6 +151,8 @@ function onCyclePauseEnd()
 // These methods are extensions to the GameConnection class. Extending
 // GameConnection makes it easier to deal with some of this functionality,
 // but these could also be implemented as stand-alone functions.
+//-----------------------------------------------------------------------------
+
 //-----------------------------------------------------------------------------
 
 function GameConnection::onLeaveMissionArea(%this)
