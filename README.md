@@ -15,6 +15,8 @@ If you have just created a new Torque game project, then you should be able to s
 
 With an existing Torque project, however, you may have to do a little manual script merging, if you have modified any of the following files:
 
+art/datablocks/datablockExec.cs  -  exec physicsShape.cs
+
 scripts/main.cs          - start SQL and begin openSimEarth ticking.
 
 scripts/client/
