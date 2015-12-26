@@ -38,6 +38,48 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };   
+   new Sun(theSun) {
+      azimuth = "125";
+      elevation = "70";
+      color = "0.968628 0.901961 0.901961 1";
+      ambient = "0.078431 0.113725 0.156863 1";
+      brightness = "1.3";
+      castShadows = "1";
+      coronaEnabled = "1";
+      coronaScale = "0.5";
+      coronaTint = "1 1 1 1";
+      coronaUseLightColor = "1";
+      flareScale = "1";
+      attenuationRatio = "0 1 1";
+      shadowType = "PSSM";
+      texSize = "1024";
+      overDarkFactor = "3000 1500 750 250";
+      shadowDistance = "200";
+      shadowSoftness = "0.25";
+      numSplits = "4";
+      logWeight = "0.9";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "0";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         bias = "0.1";
+         Blur = "1";
+         enabled = "1";
+         height = "1024";
+         lightBleedFactor = "0.8";
+         minVariance = "0";
+         pointShadowType = "PointShadowType_Paraboloid";
+         shadowBox = "-100 -100 -100 100 100 100";
+         splitFadeDistances = "1 1 1 1";
+         width = "3072";
+      dynamicRefreshFreq = 1;//HERE: for some reason the default value of 8, or higher, results in transparents badly flickering.
    };
    new TerrainBlock(BaseTerrain) {
       terrainFile = "art/terrains/TerrainPager.ter";
@@ -83,10 +125,10 @@ new SimGroup(MissionGroup) {
    new TerrainPager(theTP) {
       mapCenterLongitude = "-123";
       mapCenterLatitude = "44";
-      tileLoadRadius = "4000";
+      tileLoadRadius = "9000";
       tileDropRadius = "9000";
       forestRadius = "500";
-      streetRadius = "500";
+      streetRadius = "2500";
       forestTries = "200";
       treeRadiusMult = "0.15";
       cellGridSize = "32";
@@ -94,9 +136,9 @@ new SimGroup(MissionGroup) {
       skyboxRes = "800";
       forestTickInterval = "120";
       useDataSource = "0";
-      doForest = "0";
+      doForest = "1";
       doForestUpdates = "0";
-      doStreets = "0";
+      doStreets = "1";
       doStreetUpdates = "0";
       doStaticShapes = "1";
       doStaticShapeUpdates = "0";
@@ -279,36 +321,6 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new PointLight() {
-      radius = "5000";
-      isEnabled = "1";
-      color = "1 1 1 1";
-      brightness = "1.5";
-      castShadows = "0";
-      staticRefreshFreq = "250";
-      dynamicRefreshFreq = "8";
-      priority = "1";
-      animate = "1";
-      animationPeriod = "1";
-      animationPhase = "1";
-      flareScale = "1";
-      attenuationRatio = "0 1 1";
-      shadowType = "DualParaboloidSinglePass";
-      texSize = "512";
-      overDarkFactor = "2000 1000 500 100";
-      shadowDistance = "400";
-      shadowSoftness = "0.15";
-      numSplits = "1";
-      logWeight = "0.91";
-      fadeStartDistance = "0";
-      lastSplitTerrainOnly = "0";
-      representedInLightmap = "0";
-      shadowDarkenColor = "0 0 0 -1";
-      includeLightmappedGeometryInShadow = "0";
-      position = "-492.237 -8125.9 300";
-      rotation = "1 0 0 0";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
+
 };
 //--- OBJECT WRITE END ---

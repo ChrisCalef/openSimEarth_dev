@@ -153,8 +153,6 @@ function onCyclePauseEnd()
 // but these could also be implemented as stand-alone functions.
 //-----------------------------------------------------------------------------
 
-//-----------------------------------------------------------------------------
-
 function GameConnection::onLeaveMissionArea(%this)
 {
    // The control objects invoke this method when they

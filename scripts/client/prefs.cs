@@ -1,7 +1,7 @@
 $pref::openSimEarth::autoLoadScenes = 0;
-$pref::openSimEarth::DB = "openSimEarth.db";
+$pref::OpenSimEarth::DB = "openSimEarth.db";
+$pref::openSimEarth::MapDB = "w130n40.db";
 $pref::openSimEarth::OSM = "creswell.osm";
-$pref::openSimEarth::OSMDB = "w130n40.db";
 $pref::openSimEarth::saveForests = "0";
 $pref::openSimEarth::savePhysicsShapes = "0";
 $pref::openSimEarth::saveRoads = "0";

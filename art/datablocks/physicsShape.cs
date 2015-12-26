@@ -36,7 +36,7 @@ enum physicsShapeType
 datablock PhysicsShapeData( M4Physics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/m4_optimized/M4.dts";
+   shapeName = "art/shapes/Daz3D/Michael4/M4.dts";
    emap = 1;
    //simType = 2;
    
@@ -112,7 +112,7 @@ datablock PhysicsShapeData( M4Physics )
 datablock PhysicsShapeData( bo105Physics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/bo105/bo105.dts";
+   shapeName = "art/shapes/FlightGear/bo105/bo105.dts";
    emap = 1;
    //simType = 2;
    
@@ -167,7 +167,7 @@ datablock PhysicsShapeData( bo105Physics )
 datablock PhysicsShapeData( ka50Physics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/ka50.dts";
+   shapeName = "art/shapes/FlightGear/ka50/Models/ka50.dts";
    emap = 1;
    //simType = 2;
    
@@ -223,7 +223,7 @@ datablock PhysicsShapeData( ka50Physics )
 datablock PhysicsShapeData( ka50mainRotorPhysics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/MainRotor/MainRotor.dts";
+   shapeName = "art/shapes/FlightGear/ka50/Models/MainRotor/MainRotor.dts";
    isArticulated = false;
    shapeID = 5;    
 };
@@ -231,7 +231,7 @@ datablock PhysicsShapeData( ka50mainRotorPhysics )
 datablock PhysicsShapeData( ka50bladePhysics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/MainRotor/blade.dts";
+   shapeName = "art/shapes/FlightGear/ka50/Models/MainRotor/blade.dts";
    isArticulated = false;
    shapeID = 6;    
 };
@@ -239,7 +239,7 @@ datablock PhysicsShapeData( ka50bladePhysics )
 datablock PhysicsShapeData( ka50rocketPhysics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/weapons/rocket.dts";
+   shapeName = "art/shapes/FlightGear/ka50/Models/weapons/rocket.dts";
    isArticulated = false;
    shapeID = 7;    
 };
@@ -247,17 +247,9 @@ datablock PhysicsShapeData( ka50rocketPhysics )
 datablock PhysicsShapeData( ka50tubeRocketPhysics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/weapons/tuberocket.dts";
+   shapeName = "art/shapes/FlightGear/ka50/Models/weapons/tuberocket.dts";
    isArticulated = false;
    shapeID = 8;    
-};
-
-datablock PhysicsShapeData( ka50guidedRocketPhysics )
-{	
-   category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/ka50/Models/weapons/9k-121.dts";
-   isArticulated = false;
-   shapeID = 9;    
 };
 
 ////////////////////////////////////////////////////////////////
@@ -265,7 +257,7 @@ datablock PhysicsShapeData( ka50guidedRocketPhysics )
 datablock PhysicsShapeData( dragonflyPhysics )
 {	
    category = "PhysicsShape";
-   shapeName = "art/shapes/fg_convert/Dragonfly/dragonfly.dts";
+   shapeName = "art/shapes/FlightGear/Dragonfly/dragonfly.dts";
    emap = 1;
    //simType = 2;
    
