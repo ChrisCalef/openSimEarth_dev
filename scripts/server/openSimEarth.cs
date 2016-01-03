@@ -144,7 +144,7 @@ function PhysicsShape::onStartup(%this)
       %this.useDataSource = true;
       //%this.showNodes();     
       %this.setName("ka50");
-      %this.schedule(500,"showBlades");
+      %this.schedule(500,"showRotorBlades");
    }
 }
 
